@@ -1,0 +1,16 @@
+{
+  "name": "my-crypto-heroes",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ yanoshniko/my-crypto-heroes",
+    "create-local": "graph create --node http://localhost:8020/ yanoshniko/my-crypto-heroes",
+    "remove-local": "graph remove --node http://localhost:8020/ yanoshniko/my-crypto-heroes",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 yanoshniko/my-crypto-heroes"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.19.0",
+    "@graphprotocol/graph-ts": "0.19.0"
+  }
+}
